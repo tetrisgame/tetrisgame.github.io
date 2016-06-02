@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game Tetris </title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            img {margin:0; float: left;}
+            pre{margin:0;}
+            body{margin:0;padding:0;}
+        </style>
+        <script language="JavaScript" src="js/tetris.js"></script>
+    </head>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <table border="1">
+                            <tr>
+                                <td>
+                                    <script language="JavaScript">
+                                        createboard();
+                                    </script>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="text-align: center;font-size: 20px; ">
+                        <button><a href="javascript:startgame();" style="text-decoration: none;font-size: 20px;">Bắt đầu </a></button>
+                        <h4>Mô tả:</h4>
+                        <p>Game với 10 cấp độ chơi với độ khó tăng dần.<br>
+                            Mỗi cấp độ ứng với 5 hàng.</p>
+                        <h4>Cách chơi: Sử dụng các phím mũi tên</h4>
+                        <p>&uparrow; Đổi hướng gạch<br>
+                            &leftarrow; &rightarrow; Đưa gạch sang trái hoặc phải<br>
+                            &downarrow; Đưa gạch xuống nhanh</p>
+                        <form name="f">
+                            <table border="1">
+                                <tr>
+                                    <td style="color: red;">Cấp độ: </td>
+                                    <td><input type="text" name="level" value="1" style="font-size: 20px;text-align: center;" disabled></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: red;">Số hàng: </td>
+                                    <td><input type="text" name="lines" value="0" style="font-size: 20px;text-align: center;" disabled></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:red;">Số điểm: </td>
+                                    <td><input type="text" name="score" value="0" style="font-size: 20px;text-align: center;" disabled></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+
+
+
